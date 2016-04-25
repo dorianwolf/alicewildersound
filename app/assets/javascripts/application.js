@@ -22,38 +22,38 @@ $(window).bind('page:change', function() {
   initPage();
 });
 function initPage() {
-
-  // Overline animation and text and menu display
-  if($('.header-info').length){
-
-    // Menu display
-    if($('.menu-item').length){
-      $('.current_page').removeClass('current_page');
-      var page = '.'+$('.header-info').data('page');
-      var menu_item = $(page);
-      menu_item.addClass('current_page');
-    }
-
-    // Overline animation and text
-    var text = $('.header-info').data('text');
-    var header = $('.audio-engineer');
-    if(header.html().indexOf(text) == -1){
-      if(header.html().indexOf('Logout') == -1){
-        header.append(text);
-      }
-    }
-    $('.overline').animate({
-      width: $('.audio-engineer').width()-4
-  	}, 2000);
-  } else {
-    var header = $('.audio-engineer');
-    if(header.html().indexOf('Logout') == -1){
-      header.append('audio-engineer');
-    }
-    $('.overline').animate({
-      width: $('.audio-engineer').width()-4
-  	}, 2000);
-  }
+  // 
+  // // Overline animation and text and menu display
+  // if($('.header-info').length){
+  //
+  //   // Menu display
+  //   if($('.menu-item').length){
+  //     $('.current_page').removeClass('current_page');
+  //     var page = '.'+$('.header-info').data('page');
+  //     var menu_item = $(page);
+  //     menu_item.addClass('current_page');
+  //   }
+  //
+  //   // Overline animation and text
+  //   var text = $('.header-info').data('text');
+  //   var header = $('.audio-engineer');
+  //   if(header.html().indexOf(text) == -1){
+  //     if(header.html().indexOf('Logout') == -1){
+  //       header.append(text);
+  //     }
+  //   }
+  //   $('.overline').animate({
+  //     width: $('.audio-engineer').width()-4
+  // 	}, 2000);
+  // } else {
+  //   var header = $('.audio-engineer');
+  //   if(header.html().indexOf('Logout') == -1){
+  //     header.append('audio-engineer');
+  //   }
+  //   $('.overline').animate({
+  //     width: $('.audio-engineer').width()-4
+  // 	}, 2000);
+  // }
 
 
   // Play icon opens soundcloud, delete closes

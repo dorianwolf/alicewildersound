@@ -12,11 +12,23 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: 100px;
+  //
+  // background-image: url(image_path('bg2.jpg'));
+  // background-size: 100%;
 }
 
 a {
   text-decoration: none;
   color: #fff;
+  transition: color 0.7s;
+}
+
+a:hover {
+  color: #555;
+}
+
+h1 {
+  font-size: 33px;
 }
 
 .secret {
@@ -35,25 +47,22 @@ a {
   font-size: 40px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  text-align: center;
   background-color: #090909;
-  border-bottom: 2px solid #aaa;
+  border-bottom: 1px solid #aaa;
 
-  .alice, .audio-engineer {
-    margin-top: 24px;
-  }
-
-  .audio-engineer {
+  .alice {
     display: inline-block;
-    padding-top: 8px;
-    font-size: 20px;
+    padding: 24px 0 0 50px;
   }
 
-  .overline {
-    position: relative;
-    width: 0;
-    height: 5px;
-    border-top: 1px solid #eee;
+  .other_menu {
+    float: right;
+    margin: 35px 50px 0 0;
+    font-size: 13px;
+
+    a {
+      margin: 0 10px;
+    }
   }
 }
 
@@ -61,6 +70,7 @@ a {
 .content {
   padding: 40px 0;
   background: none;
+  text-align: center;
 }
 
 .footer {
@@ -71,7 +81,7 @@ a {
   text-align: center;
   color: #aaa;
   background-color: #090909;
-  border-top: 2px solid #aaa;
+  border-top: 1px solid #aaa;
   padding-top: 10px;
 
   .copyright {
@@ -114,11 +124,6 @@ a {
       display: block;
       margin-top: 5px;
     }
-
-    .audio-engineer {
-      margin-top: 0;
-      font-size: 15px;
-    }
   }
 
   .menu, .list {
@@ -128,7 +133,7 @@ a {
     .menu-item, .live-client, .studio-client {
       float: none;
       display: block;
-      margin: 0 auto;
+      margin: 20px auto;
     }
 
     .blurb.short {

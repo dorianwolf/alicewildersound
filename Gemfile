@@ -33,6 +33,9 @@ gem 'fog', require: 'fog/aws'
 gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'figaro'
 
+# Email
+gem 'postmark-rails'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

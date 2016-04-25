@@ -2,27 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.menu-item.blurb {
-  background-color: #090909;
-  width: 754px;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.bio .blurb {
+  max-width: 750px;
+  line-height: 20px;
 
   p {
-    position: inherit;
-    top: 0;
-    left: 0;
-    line-height: 20px;
+    text-align: justify;
   }
 }
-
-.menu-item #alice {
-  object-position: center;
-}
-
-@media only screen
-  and (max-width : 736px) {
-    
-  }

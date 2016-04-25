@@ -1,17 +1,12 @@
-<% if notice %>
-  <%= content_tag "div", class:'header-info', data: {text: notice, page: 'bio'} do %>
+<div class="bio">
+  <% if notice %>
+    <%= content_tag "div", class:'header-info', data: {text: notice, page: 'bio'} do %>
+    <% end %>
+  <% else %>
+    <%= content_tag "div", class:'header-info', data: {text: 'bio', page: 'bio'} do %>
+    <% end %>
   <% end %>
-<% else %>
-  <%= content_tag "div", class:'header-info', data: {text: 'bio', page: 'bio'} do %>
-  <% end %>
-<% end %>
-<div class="menu">
-  <%= render 'shared/menu2' %>
-  <div class="menu-item">
-    <%= image_tag('alice.gif', id: 'alice', class: 'gif') %>
-    <%= image_tag('alice.jpg', id: 'alice', class: 'jpg') %>
-  </div>
-  <div class="menu-item blurb">
+  <div class="blurb">
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>

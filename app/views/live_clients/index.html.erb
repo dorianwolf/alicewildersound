@@ -5,18 +5,17 @@
   <%= content_tag "div", class:'header-info', data: {text: 'bands mixed live', page: 'live'} do %>
   <% end %>
 <% end %>
+<div class="blurb">
+  <p>
+    bands mixed live
+  </p>
+</div>
 <div class="list">
-  <%= render 'shared/menu3' %>
   <% @live_clients.reverse_each do |live_client| %>
     <div class="live-client">
       <%= image_tag live_client.image_url.to_s, class: 'artist-pic' %>
       <span class="info">
         <p class="artist"><%= live_client.artist %></p>
-        <% if live_client.soundcloud and live_client.soundcloud.length > 0 %>
-          <%= image_tag 'play.png', class: 'play' %>
-          <%= live_client.soundcloud.html_safe %>
-          <%= image_tag 'delete.png', class: 'sc-delete' %>
-        <% end %>
       </span>
     </div>
   <% end %>

@@ -17,9 +17,15 @@
       <% else %>
         <a href="<%= root_path %>">
       <% end %>
-        <span class="alice">Alice Wilder</span>
+        <div class="alice">
+          <h1>Alice Wilder</h1>
+        </div>
       </a>
-        <div class="audio-engineer"><div class="overline"></div></div>
+        <div class="other_menu">
+          <a href='<%= studio_clients_path %>'>Studio</a>
+          <a href="<%= live_clients_path %>">Live</a>
+          <a href="<%= bio_index_path %>">Bio</a>
+        </div>
     </div>
     <div class="content">
       <%= yield %>

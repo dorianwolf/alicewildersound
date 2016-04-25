@@ -5,8 +5,12 @@
   <%= content_tag "div", class:'header-info', data: {text: 'bands mixed in the studio', page: 'studio'} do %>
   <% end %>
 <% end %>
+<div class="blurb">
+  <p>
+    bands mixed in the studio
+  </p>
+</div>
 <div class="list">
-  <%= render 'shared/menu4' %>
   <% @studio_clients.reverse_each do |studio_client| %>
     <div class="studio-client">
       <%= image_tag studio_client.image.url, class: 'artist-pic' %>
