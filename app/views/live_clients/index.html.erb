@@ -5,11 +5,6 @@
   <%= content_tag "div", class:'header-info', data: {text: 'bands mixed live', page: 'live'} do %>
   <% end %>
 <% end %>
-<div class="blurb">
-  <p>
-    bands mixed live
-  </p>
-</div>
 <div class="list">
   <% @live_clients.reverse_each do |live_client| %>
     <div class="live-client">

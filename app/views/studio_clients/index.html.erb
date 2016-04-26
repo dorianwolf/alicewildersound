@@ -5,11 +5,6 @@
   <%= content_tag "div", class:'header-info', data: {text: 'bands mixed in the studio', page: 'studio'} do %>
   <% end %>
 <% end %>
-<div class="blurb">
-  <p>
-    bands mixed in the studio
-  </p>
-</div>
 <div class="list">
   <% @studio_clients.reverse_each do |studio_client| %>
     <div class="studio-client">
@@ -18,11 +13,6 @@
         <div class="artist"><%= studio_client.artist %></div>
         <div class="album"><%= studio_client.album %></div>
         <div class="role"><%= studio_client.role %></div>
-        <% if studio_client.soundcloud and studio_client.soundcloud.length > 0 %>
-          <%= image_tag 'play.png', class: 'play' %>
-          <%= studio_client.soundcloud.html_safe %>
-          <%= image_tag 'delete.png', class: 'sc-delete' %>
-        <% end %>
       </span>
     </div>
   <% end %>

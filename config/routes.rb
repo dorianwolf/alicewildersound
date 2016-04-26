@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'home#index'
+  root 'bio#index'
 
-  resources :home, only: [:index]
   resources :bio, only: [:index]
   resources :live_clients, :path => 'live', only: [:index]
 
@@ -11,7 +10,7 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
-    root to: 'home#index', layout: 'admin'
+    root to: 'bio#index', layout: 'admin'
     resources :bio, only: [:index], layout: 'admin'
     resources :live_clients, :path => 'live'
     resources :studio_clients, :path => 'studio' do

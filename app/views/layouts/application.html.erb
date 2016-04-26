@@ -24,30 +24,15 @@
         <div class="other_menu">
           <a href='<%= studio_clients_path %>'>Studio</a>
           <a href="<%= live_clients_path %>">Live</a>
-          <a href="<%= bio_index_path %>">Bio</a>
         </div>
     </div>
     <div class="content">
       <%= yield %>
     </div>
     <div class="footer">
-      <% if current_user %>
-        <div class="logout">
-          <%= link_to "Logout", '/logout' %>
-        </div>
-      <% else %>
-        <div class="copyright">
-          <span><a href="<%= login_path%>" class='secret'>&copy;</a>2016 Alice Wilder Sound</span>
-        </div>
-        <div class="social-medias">
-          <div class="social-media"><a href="https://www.instagram.com/alice_aka_chip" target='_blank'><img src="<%= asset_path "instagram.png" %>" /></a></div>
-          <div class="social-media"><a href="https://www.facebook.com/alice.wilder.5" target='_blank'><img src="<%= asset_path "facebook.png" %>" /></a></div>
-          <div class="social-media"><a href="mailto:contact@alicewildersound.com"><img src="<%= asset_path "mail.png" %>" /></a></div>
-        </div>
-        <div class="copyright dorian">
-          <span>web designed by Dorian Thornton</span>
-        </div>
-      <% end %>
+      <div class="copyright">
+        <span><a href="<%= login_path%>" class='secret'>&copy;</a> 2016 Alice Wilder Sound</span>
+      </div>
     </div>
   </div>
 </body>

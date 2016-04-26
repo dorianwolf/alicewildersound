@@ -11,11 +11,13 @@
 .studio-client {
   display: table-row;
   float: left;
+  margin: 20px;
   width: 250px;
   height: 250px;
   position: relative;
-  background-color: #eee;
-  border: 1px solid #333;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #090909;
 }
 
 .studio-client img {
@@ -33,25 +35,29 @@
   width: 30px;
 }
 
-.studio-client .add img {
+.studio-client .add {
   top: 90px;
   left: 90px;
   width: 70px;
   opacity: 0.8;
 }
 
-.studio-client img:hover, .studio-client img:focus {
+.list a:hover {
   opacity: 1;
+
+  img {
+    opacity: 1;
+  }
 }
 
 .studio-client .artist-pic {
   position: static;
-  width: 240px;
-  height: 240px;
-  padding-top: 5px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   object-position: top;
   opacity: 1;
+  border-radius: 3px;
 }
 
 .studio-client .info {
@@ -60,9 +66,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #090909;
+  background-color: #000;
   opacity: 0;
   transition: opacity 1.5s;
+  border-radius: 3px;
 }
 
 .studio-client .info .artist {
