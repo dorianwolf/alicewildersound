@@ -1,12 +1,5 @@
-<% if notice %>
-  <%= content_tag "div", class:'header-info', data: {text: notice} do %>
-  <% end %>
-<% else %>
-  <%= content_tag "div", class:'header-info', data: {text: 'login'} do %>
-  <% end %>
-<% end %>
-<div class="menu">
-  <div class="menu-item login">
+<div class="blurb">
+  <div class="login">
     <%= form_tag '/login' do %>
       <%= text_field_tag :name, nil, placeholder: 'Name' %>
       <%= password_field_tag :password, nil, placeholder: 'Password' %>

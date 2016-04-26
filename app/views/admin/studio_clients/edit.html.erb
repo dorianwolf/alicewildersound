@@ -1,10 +1,3 @@
-<% if notice %>
-  <%= content_tag "div", class:'header-info', data: {text: notice, page: 'studio'} do %>
-  <% end %>
-<% else %>
-  <%= content_tag "div", class:'header-info', data: {text: 'bands mixed in the studio', page: 'studio'} do %>
-  <% end %>
-<% end %>
 <div class="list">
   <div class="studio-client">
     <%= image_tag @studio_client.image_url.to_s, class: 'artist-pic' %>
@@ -12,11 +5,6 @@
       <div class="artist"><%= @studio_client.artist %></div>
       <div class="album"><%= @studio_client.album %></div>
       <div class="role"><%= @studio_client.role %></div>
-      <% if @studio_client.soundcloud and @studio_client.soundcloud.length > 0 %>
-        <%= image_tag 'play.png', class: 'play' %>
-        <%= @studio_client.soundcloud.html_safe %>
-        <%= image_tag 'delete.png', class: 'sc-delete' %>
-      <% end %>
     </span>
   </div>
   <div class="studio-client">
@@ -41,11 +29,6 @@
       <div class='role'>
         <%= @studio_client.role %>
       </div>
-      <% if @studio_client.soundcloud and @studio_client.soundcloud.length > 0 %>
-        <%= image_tag 'play.png', class: 'play' %>
-        <%= @studio_client.soundcloud.html_safe %>
-        <%= image_tag 'delete.png', class: 'sc-delete' %>
-      <% end %>
     </div>
   </div>
   <div class="studio-client">

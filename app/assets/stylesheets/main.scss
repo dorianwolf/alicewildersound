@@ -8,23 +8,23 @@ body {
   font-weight: 200;
   color: #eee;
   letter-spacing: 1px;
-  background-image: url(image_path('home-bg.png'));
-  background-position: center;
-  background-attachment: fixed;
-  background-size: 100px;
+  // background-image: url(image_path('home-bg.png'));
+  // background-position: center;
+  // background-attachment: fixed;
+  // background-size: 100px;
   //
-  // background-image: url(image_path('bg2.jpg'));
-  // background-size: 100%;
+  background-image: url(image_path('bg4.jpg'));
+  background-size: 100% 100%;
 }
 
 a {
   text-decoration: none;
   color: #fff;
-  transition: color 0.7s;
+  transition: opacity 0.7s;
 }
 
 a:hover {
-  color: #555;
+  opacity: 0.3;
 }
 
 h1 {
@@ -36,7 +36,7 @@ h1 {
 }
 
 .wrapper {
-  background: rgba(09, 09, 09, 0.95);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   min-height: 100%;
   position: relative;
@@ -47,17 +47,18 @@ h1 {
   font-size: 40px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  background-color: #090909;
-  border-bottom: 1px solid #aaa;
+  // background-color: #090909;
+  // border-bottom: 1px solid #aaa;
+  opacity: 0.9;
 
   .alice {
     display: inline-block;
-    padding: 24px 0 0 50px;
+    padding: 34px 0 0 60px;
   }
 
   .other_menu {
     float: right;
-    margin: 35px 50px 0 0;
+    margin: 45px 60px 0 0;
     font-size: 13px;
 
     a {
@@ -73,6 +74,18 @@ h1 {
   text-align: center;
 }
 
+.blurb {
+  background-color: #090909;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 13px;
+  letter-spacing: 3.2px;
+}
+
 .footer {
   width: 100%;
   position: absolute;
@@ -80,9 +93,10 @@ h1 {
   left: 0;
   text-align: center;
   color: #aaa;
-  background-color: #090909;
-  border-top: 1px solid #aaa;
-  padding-top: 10px;
+  // background-color: #090909;
+  // border-top: 1px solid #aaa;
+  padding-bottom: 10px;
+  opacity: 0.8;
 
   .copyright {
     vertical-align: middle;
@@ -99,11 +113,16 @@ h1 {
   .social-media {
     display: inline-block;
     padding-top: 5px;
+    transition: opacity 0.7s;
 
     img {
       width: 15px;
       margin: 0 10px;
     }
+  }
+
+  .social-media:hover {
+    opacity: 0.5;
   }
 }
 
