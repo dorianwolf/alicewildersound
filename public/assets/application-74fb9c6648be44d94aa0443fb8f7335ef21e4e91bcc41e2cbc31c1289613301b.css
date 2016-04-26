@@ -1,0 +1,700 @@
+/* line 5, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/bio.scss */
+.bio .blurb {
+  max-width: 750px;
+  line-height: 20px;
+}
+/* line 9, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/bio.scss */
+.bio .blurb p {
+  text-align: justify;
+}
+/* line 5, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/home.scss */
+.blurb {
+  background-color: #090909;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+/* line 5, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.list {
+  display: table;
+  margin: 20px auto;
+  max-width: 1010px;
+}
+
+/* line 11, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client {
+  display: table-row;
+  margin: 20px;
+  float: left;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  background-color: #eee;
+  border: 1px solid #333;
+}
+
+/* line 22, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client .add img {
+  top: 90px;
+  left: 90px;
+  width: 70px;
+  opacity: 0.8;
+}
+
+/* line 29, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client img:hover, .live-client img:focus {
+  opacity: 1;
+}
+
+/* line 33, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client .artist-pic {
+  position: static;
+  width: 240px;
+  height: 240px;
+  margin-top: 5px;
+  object-fit: cover;
+  object-position: top;
+  opacity: 1;
+}
+
+/* line 43, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client .info {
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+/* line 54, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client .info .artist {
+  margin: 60px 20px 0;
+  font-size: 20px;
+}
+
+/* line 59, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client iframe, .live-client .sc-delete {
+  display: none;
+}
+
+/* line 63, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+/* line 72, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client iframe.show, .live-client .sc-delete.show {
+  display: block;
+  opacity: 1;
+}
+
+/* line 77, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client p.edit-label {
+  position: absolute;
+  top: 8px;
+  left: 105px;
+  padding: 0;
+}
+
+/* line 84, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client p.new-label {
+  position: absolute;
+  top: 8px;
+  left: 55px;
+  padding: 0;
+}
+
+/* line 92, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client:hover .info {
+  opacity: 0.7;
+}
+
+/* line 97, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client .info.back {
+  opacity: 1;
+}
+
+/* line 104, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+form {
+  text-align: center;
+}
+
+/* line 108, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+form .field {
+  border: none;
+}
+
+/* line 112, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+form .field input {
+  padding: 0 10px;
+  background-color: #333;
+  color: #ddd;
+  width: 210px;
+  border: none;
+  font: inherit;
+}
+
+/* line 121, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+form .field.artist input {
+  margin: 40px 10px 5px;
+  font-size: 30px;
+}
+
+/* line 126, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+form .field.contact input {
+  margin: 5px 10px 10px;
+  font-size: 12px;
+}
+
+/* line 131, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+form .field.image {
+  margin: 5px 0 10px;
+}
+
+/* line 135, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+form .field.soundcloud input {
+  height: 25px;
+  font-size: 10px;
+}
+
+/* line 140, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+form .field.image input {
+  height: 25px;
+  font-size: 10px;
+}
+
+/* line 145, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client form .upload {
+  text-align: center;
+  width: 150px;
+  margin: 5px auto 0;
+  font-size: 12px;
+}
+/* line 150, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client form .upload input {
+  width: 180px;
+  margin-top: 5px;
+}
+
+/* line 156, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+.live-client form .actions input {
+  margin: 15px 0;
+  background-color: #333;
+  border: 1px solid #444;
+  color: #ddd;
+  font-size: 15px;
+  width: 150px;
+}
+
+/* line 165, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+form .actions input:hover {
+  background-color: #444;
+}
+
+@media only screen and (max-width: 736px) {
+  /* line 173, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/live_clients.scss */
+  .live-client .info {
+    opacity: 0.7;
+  }
+}
+/* line 1, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+body {
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #eee;
+  letter-spacing: 1px;
+  background-image: url("/assets/home-bg-41963032a0492daf646a784afbcac20096aed57f031d92c9b835e133fac9dad9.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100px;
+}
+
+/* line 20, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.7s;
+}
+
+/* line 26, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+a:hover {
+  color: #555;
+}
+
+/* line 30, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+h1 {
+  font-size: 33px;
+}
+
+/* line 34, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+.secret {
+  cursor: default;
+}
+
+/* line 38, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+.wrapper {
+  background: rgba(9, 9, 9, 0.95);
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 45, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+.header {
+  height: 80px;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background-color: #090909;
+  border-bottom: 1px solid #aaa;
+}
+/* line 53, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+.header .alice {
+  display: inline-block;
+  padding: 24px 0 0 50px;
+}
+/* line 58, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+.header .other_menu {
+  float: right;
+  margin: 35px 50px 0 0;
+  font-size: 13px;
+}
+/* line 63, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+.header .other_menu a {
+  margin: 0 10px;
+}
+
+/* line 70, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+.content {
+  padding: 40px 0;
+  background: none;
+  text-align: center;
+}
+
+/* line 76, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: #aaa;
+  background-color: #090909;
+  border-top: 1px solid #aaa;
+  padding-top: 10px;
+}
+/* line 87, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+.footer .copyright {
+  vertical-align: middle;
+  margin: 0 10px 8px;
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+/* line 95, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+.footer .social-medias {
+  display: inline;
+}
+/* line 99, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+.footer .social-media {
+  display: inline-block;
+  padding-top: 5px;
+}
+/* line 103, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+.footer .social-media img {
+  width: 15px;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 736px) {
+  /* line 113, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+  .content {
+    padding-bottom: 100px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* line 119, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+  .header {
+    padding: 20px 0;
+    height: auto;
+  }
+  /* line 123, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+  .header .alice {
+    display: block;
+    margin-top: 5px;
+  }
+
+  /* line 129, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+  .menu, .list {
+    display: block;
+    width: 100%;
+  }
+  /* line 133, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+  .menu .menu-item, .menu .live-client, .menu .studio-client, .list .menu-item, .list .live-client, .list .studio-client {
+    float: none;
+    display: block;
+    margin: 20px auto;
+  }
+  /* line 139, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+  .menu .blurb.short, .list .blurb.short {
+    height: 190px;
+  }
+  /* line 143, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+  .menu .blurb, .list .blurb {
+    display: table;
+    max-width: 210px;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  /* line 149, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+  .menu .blurb p, .list .blurb p {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 25px;
+  }
+
+  /* line 157, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+  .footer {
+    height: auto;
+  }
+  /* line 160, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+  .footer .social-medias {
+    display: block;
+  }
+  /* line 164, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+  .footer .social-media {
+    padding: 0;
+  }
+  /* line 168, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/main.scss */
+  .footer .dorian {
+    margin: 5px 0 15px;
+  }
+}
+/* line 1, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 5, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 11, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 19, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 30, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 5, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/sessions.scss */
+.menu-item.login {
+  background-color: #222;
+}
+
+/* line 9, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/sessions.scss */
+form {
+  text-align: center;
+  border: none;
+}
+
+/* line 14, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/sessions.scss */
+.login form input {
+  background-color: #333;
+  color: #ddd;
+  width: 225px;
+  height: 30px;
+  border: none;
+  font: inherit;
+  margin: 27px 10px 0;
+  font-size: 15px;
+}
+
+/* line 25, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/sessions.scss */
+form input.button {
+  width: 150px;
+}
+
+/* line 29, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/sessions.scss */
+form input.button:hover {
+  background-color: #444;
+}
+/* line 5, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.list {
+  display: table;
+  margin: 20px auto;
+  max-width: 1010px;
+}
+
+/* line 11, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client {
+  display: table-row;
+  float: left;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  background-color: #eee;
+  border: 1px solid #333;
+}
+
+/* line 21, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client img {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 13px;
+  opacity: 0.7;
+}
+
+/* line 29, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client img.play {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 30px;
+}
+
+/* line 36, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client .add img {
+  top: 90px;
+  left: 90px;
+  width: 70px;
+  opacity: 0.8;
+}
+
+/* line 43, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client img:hover, .studio-client img:focus {
+  opacity: 1;
+}
+
+/* line 47, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client .artist-pic {
+  position: static;
+  width: 240px;
+  height: 240px;
+  padding-top: 5px;
+  object-fit: cover;
+  object-position: top;
+  opacity: 1;
+}
+
+/* line 57, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #090909;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+/* line 68, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client .info .artist {
+  padding: 60px 20px 0;
+  font-size: 30px;
+}
+
+/* line 73, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client .info .album, .studio-client .info .role {
+  margin: 10px 20px 0;
+  font-size: 15px;
+}
+
+/* line 78, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client .info .role {
+  font-size: 12px;
+}
+
+/* line 82, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client .info .track {
+  margin: 10px 10px 0;
+  font-size: 11px;
+}
+
+/* line 87, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client iframe, .studio-client .sc-delete {
+  display: none;
+}
+
+/* line 91, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+/* line 101, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client iframe.show, .studio-client .sc-delete.show {
+  display: block;
+  opacity: 1;
+}
+
+/* line 107, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client:hover .info {
+  opacity: 0.7;
+}
+
+/* line 112, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client .info.back {
+  opacity: 1;
+}
+
+/* line 119, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client p.edit-label {
+  position: absolute;
+  top: 8px;
+  left: 100px;
+  padding: 0;
+}
+
+/* line 126, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client p.new-label {
+  position: absolute;
+  top: 8px;
+  left: 41px;
+  padding: 0;
+}
+
+/* line 133, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+form {
+  text-align: center;
+}
+
+/* line 137, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+form .studio-field {
+  border: none;
+}
+
+/* line 141, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+form .studio-field input {
+  padding: 0 10px;
+  background-color: #151515;
+  color: #ddd;
+  width: 210px;
+  border: none;
+  font: inherit;
+}
+
+/* line 150, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+form .studio-field.artist input {
+  font-size: 30px;
+  margin: 30px 10px 0;
+}
+
+/* line 155, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+form .studio-field.album input, form .studio-field.role input {
+  margin: 7px 10px 0;
+  font-size: 15px;
+}
+
+/* line 160, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+form .studio-field.image, form .studio-field.soundcloud {
+  margin: 0 10px;
+}
+
+/* line 164, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client form .upload {
+  text-align: center;
+  width: 150px;
+  margin: 5px auto 0;
+  font-size: 12px;
+}
+/* line 170, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client form .upload input {
+  width: 180px;
+}
+
+/* line 175, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+form .studio-field.image label, form .studio-field.soundcloud label {
+  font-size: 10px;
+}
+
+/* line 179, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+form .studio-field.image input, form .studio-field.soundcloud input {
+  height: 25px;
+  font-size: 10px;
+}
+
+/* line 184, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+.studio-client form .actions input {
+  margin: 5px 0;
+  background-color: #333;
+  border: 1px solid #444;
+  color: #ddd;
+  font-size: 15px;
+  width: 150px;
+}
+
+/* line 193, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+form .actions input:hover {
+  background-color: #444;
+}
+
+@media only screen and (max-width: 736px) {
+  /* line 201, /Users/dorianthornton/Documents/math/web dev/alicewildersound/app/assets/stylesheets/studio_clients.scss */
+  .studio-client .info {
+    opacity: 0.7;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
