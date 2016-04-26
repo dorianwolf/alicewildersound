@@ -5,18 +5,18 @@
 .list {
   display: table;
   margin: 20px auto;
-  max-width: 1020px;
+  max-width: 1120px;
 }
 
 .live-client {
   display: table-row;
   margin: 20px;
   float: left;
-  width: 250px;
-  height: 250px;
+  width: 238px;
+  height: 238px;
   position: relative;
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 4px;
   background-color: #090909;
 }
 
@@ -34,8 +34,8 @@
 
 .live-client .artist-pic {
   position: static;
-  width: 250px;
-  height: 250px;
+  width: 238px;
+  height: 238px;
   object-fit: cover;
   object-position: top;
   opacity: 1;

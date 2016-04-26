@@ -5,18 +5,18 @@
 .list {
   display: table;
   margin: 20px auto;
-  max-width: 1020px;
+  max-width: 1120px;
 }
 
 .studio-client {
   display: table-row;
   float: left;
   margin: 20px;
-  width: 250px;
-  height: 250px;
+  width: 238px;
+  height: 238px;
   position: relative;
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 4px;
   background-color: #090909;
 }
 
@@ -52,8 +52,8 @@
 
 .studio-client .artist-pic {
   position: static;
-  width: 250px;
-  height: 250px;
+  width: 238px;
+  height: 238px;
   object-fit: cover;
   object-position: top;
   opacity: 1;
@@ -61,6 +61,7 @@
 }
 
 .studio-client .info {
+  text-align: left;
   position: absolute;
   top: 0;
   left: 0;
@@ -72,18 +73,23 @@
   border-radius: 3px;
 }
 
-.studio-client .info .artist {
-  padding: 60px 20px 0;
-  font-size: 30px;
-}
+.studio-client .info {
 
-.studio-client .info .album, .studio-client .info .role {
-  margin: 10px 20px 0;
-  font-size: 15px;
-}
+  .artist {
+    padding: 60px 20px 0;
+    font-size: 20px;
+  }
 
-.studio-client .info .role {
-  font-size: 12px;
+  .role {
+    margin: 10px 20px 0;
+    font-size: 12px;
+  }
+
+  .album {
+    margin: 10px 20px 0;
+    font-size: 12px;
+    font-style: italic;
+  }
 }
 
 .studio-client .info .track {

@@ -8,13 +8,9 @@ body {
   font-weight: 200;
   color: #eee;
   letter-spacing: 1px;
-  // background-image: url(image_path('home-bg.png'));
-  // background-position: center;
-  // background-attachment: fixed;
-  // background-size: 100px;
-  //
   background-image: url(image_path('bg4.jpg'));
   background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 a {
