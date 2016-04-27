@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
-    root to: 'bio#index', layout: 'admin'
+    root 'bio#index', layout: 'admin'
     resources :bio, only: [:index], layout: 'admin'
     resources :live_clients, :path => 'live'
     resources :studio_clients, :path => 'studio' do

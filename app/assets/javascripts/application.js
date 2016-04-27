@@ -22,7 +22,7 @@ $(window).bind('page:change', function() {
   initPage();
 });
 function initPage() {
-  // 
+  //
   // // Overline animation and text and menu display
   // if($('.header-info').length){
   //
@@ -54,6 +54,32 @@ function initPage() {
   //     width: $('.audio-engineer').width()-4
   // 	}, 2000);
   // }
+
+  // Menu location glows brighter
+  $('.other_menu a').each(function(){
+
+    var path = window.location.href;
+    var url = $(this).attr('href');
+    var contains = path.indexOf(url) > -1;
+    console.log('Path: ' + path);
+    console.log('url: ' + url);
+
+    if(contains && (url != '/' && url != '/admin') ){
+      console.log('sup');
+      $(this).addClass('active');
+    } else {
+      $(this).removeClass('active');
+    }
+
+    if(url == '/' || url == '/admin'){
+      var live = path.indexOf('live') > -1;
+      var studio = path.indexOf('studio') > -1;
+      if(!live && !studio){
+        $(this).addClass('active');
+      }
+    }
+
+  });
 
 
   // Play icon opens soundcloud, delete closes

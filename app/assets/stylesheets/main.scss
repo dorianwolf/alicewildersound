@@ -16,11 +16,10 @@ body {
 a {
   text-decoration: none;
   color: #fff;
-  transition: opacity 0.7s;
 }
 
 a:hover {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 h1 {
@@ -45,7 +44,6 @@ h1 {
   text-transform: uppercase;
   // background-color: #090909;
   // border-bottom: 1px solid #aaa;
-  opacity: 0.9;
 
   .alice {
     display: inline-block;
@@ -56,9 +54,19 @@ h1 {
     float: right;
     margin: 45px 60px 0 0;
     font-size: 13px;
+    color: #fff;
 
     a {
       margin: 0 10px;
+      opacity: 0.7;
+    }
+
+    a.active {
+      opacity: 1;
+    }
+
+    a:hover {
+      opacity: 0.4;
     }
   }
 }
@@ -99,7 +107,7 @@ h1 {
     margin: 0 10px 8px;
     display: inline-block;
     font-size: 10px;
-    letter-spacing: 1.5px;
+    letter-spacing: 3.5px;
   }
 
   .social-medias {
