@@ -3,12 +3,13 @@ html, body {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Poppins, sans-serif;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 300;
   color: #eee;
   letter-spacing: 1px;
   background-image: url(image_path('bg4.jpg'));
+  background-color: black;
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -23,7 +24,8 @@ a:hover {
 }
 
 h1 {
-  font-size: 33px;
+  font-size: 35px;
+  letter-spacing: 5px;
 }
 
 .secret {
