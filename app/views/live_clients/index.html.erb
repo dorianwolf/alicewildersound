@@ -9,9 +9,10 @@
   <% @live_clients.reverse_each do |live_client| %>
     <div class="live-client">
       <%= image_tag live_client.image_url.to_s, class: 'artist-pic' %>
-      <span class="info">
+      <div class="info">
         <p class="artist"><%= live_client.artist %></p>
-      </span>
+        <p class="role"><%= live_client.role %></p>
+      </div>
     </div>
   <% end %>
 </div>

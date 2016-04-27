@@ -69,6 +69,6 @@ class Admin::LiveClientsController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def live_client_params
-      params.require(:live_client).permit(:artist, :image, :remote_image_url, :contact, :soundcloud)
+      params.require(:live_client).permit(:artist, :image, :remote_image_url, :role)
     end
 end
