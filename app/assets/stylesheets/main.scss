@@ -149,33 +149,12 @@ h1 {
       display: block;
       margin-top: 5px;
     }
-  }
 
-  .menu, .list {
-    display: block;
-    width: 100%;
-
-    .menu-item, .live-client, .studio-client {
-      float: none;
+    .other_menu {
       display: block;
+      width: 100%;
       margin: 20px auto;
-    }
-
-    .blurb.short {
-      height: 190px;
-    }
-
-    .blurb {
-      display: table;
-      max-width: 210px;
       text-align: center;
-      padding: 30px 20px;
-
-      p {
-        display: table-cell;
-        vertical-align: middle;
-        line-height: 25px;
-      }
     }
   }
 
