@@ -10,12 +10,11 @@
 
 .live-client {
   display: table-row;
-  margin: 20px;
   float: left;
-  width: 220px;
-  box-sizing: border-box;
+  margin: 20px;
+  width: 238px;
   position: relative;
-  background-color: #eee;
+  border-radius: 4px;
 }
 
 .live-client .add {
@@ -32,26 +31,36 @@
 
 .live-client .artist-pic {
   position: static;
-  width: 200px;
-  height: 200px;
-  margin-top: 20px;
+  width: 238px;
+  height: 238px;
   object-fit: cover;
   object-position: top;
   opacity: 1;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
 }
 
 .live-client .info {
-  height: 60px;
-  padding: 10px 10px 5px;
-  margin: 0 auto;
+  display: block;
+  text-align: left;
+  height: 50px;
+  margin: 5px 0 0;
+  background-color: #000;
+  border: 1px solid #ddd;
   box-sizing: border-box;
-  color: #000;
+  transition: opacity 1.5s;
+  border-radius: 3px;
+  padding-left: 10px;
 
   .artist {
-    font-size: 20px;
+    margin-top: 7px;
+    font-size: 18px;
   }
+
   .role {
-    font-size: 14px;
+    margin-top: 5px;
+    font-size: 12px;
   }
 }
 
