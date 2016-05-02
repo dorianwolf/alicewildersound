@@ -1,13 +1,7 @@
-<% if notice %>
-  <%= content_tag "div", class:'header-info', data: {text: notice, page: 'home'} do %>
-  <% end %>
-<% else %>
-  <%= content_tag "div", class:'header-info', data: {text: 'audio engineer', page: 'home'} do %>
-  <% end %>
-<% end %>
-
-<div class="blurb">
-  <p>
-    alice wilder is an audio engineer based out of Seattle and Toronto
-  </p>
+<div class="bio">
+  <div class="blurb">
+    <p>
+      Alice wilder is an audio engineer based out of seattle and Toronto, currently living in NYC. She has done mixing and producing work in the studio and has 10 years of experience mixing bands live on tour<a href="<%= login_path %>" class='secret'>.</a>
+    </p>
+  </div>
 </div>

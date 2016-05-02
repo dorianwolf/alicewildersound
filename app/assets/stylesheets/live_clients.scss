@@ -159,8 +159,12 @@ form .actions input:hover {
   and (max-width : 736px) {
 
   .list {
+    width: 100%;
+    display: block;
+    text-align: center;
     .live-client {
-    
+      display: inline-block;
+      float: none;
     }
   }
 
