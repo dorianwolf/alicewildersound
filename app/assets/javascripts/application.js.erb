@@ -12,7 +12,6 @@
 //
 // = require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 
 $(function() {
@@ -54,6 +53,12 @@ function initPage() {
   //     width: $('.audio-engineer').width()-4
   // 	}, 2000);
   // }
+
+  // Random background image
+
+  var backgrounds = ['<%= asset_path('bg1.jpg') %>', '<%= asset_path('bg2.jpg') %>', '<%= asset_path('bg3.jpg') %>', '<%= asset_path('bg4.jpg') %>', '<%= asset_path('bg5.jpg') %>', '<%= asset_path('bg6.jpg') %>'];
+  var random_bg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+  $('body').css("background-image", 'url('+ random_bg + ')');
 
   // Menu location glows brighter
   $('.other_menu a').each(function(){
